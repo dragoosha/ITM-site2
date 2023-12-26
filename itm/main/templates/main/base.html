@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../static/css/stylesheet.css">
+    <link rel="stylesheet" href="../../static/css/adaptive.css">
+
+
+    <title>ITM</title>
+</head>
+
+<body>
+    <!--Header-->
+    <div class="header">
+        <div class="container">
+            <div class="header__inner">
+                <nav class="nav">
+                    <a class="nav__link active" href="{% url 'home' %}">Über uns</a>
+                    <a class="nav__link" href="{% url 'contact' %}">Kontakt</a>
+                </nav>
+                <div class="header__logo">ITM-Projekt</div>
+            </div>
+        </div>
+    </div>
+
+    <!--Content-->
+    {% block content %}
+    {% endblock %}
+
+    <!--Footer-->
+    <div class="footer">
+        <div class="logo">
+            <img src="../../static/images/ITM_logo_black_type-3_png 4.png" alt="">
+        </div>
+        <div class="footer__info">
+            <h2>Tooling ITM-Projekt GmbH</h2>
+            <p style="margin: 0;">Engineering-Unternehmen <br>
+                Intelligent Tool Management</p>
+
+            <p style="padding-top: 20px;" id="adresse">
+                Trattnerhof 2, Top 308-311 <br>
+                1010 Wien <br>
+                Österreich <br><br>
+
+                Telefon: +43 1 363-01-04 <br>
+                E-Mail: info@itm-projekt.at <br>
+                www.itm-projekt.at <br>
+            <div class="footer__sites">
+                <a href="{% url 'impressum' %}">
+                    Impressum
+                </a>
+                <a href="{% url 'privacy' %}">
+                    Datenschutzerklärung
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
