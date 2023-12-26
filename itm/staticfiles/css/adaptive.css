@@ -29,23 +29,9 @@
     }
 
     .image-container {
-        width: 300px;
-        height: 200px;
+        width: 400px;
     }
 
-    .slider__img {
-        width: 300px;
-        height: 200px;
-        object-fit:cover;
-    }
-
-    .slider__btn-next {
-    font-size: 20px
-}
-
-.slider__btn-prev {
-    font-size: 20px
-}
     .header__logo {
         font-size: 20px;
     }
@@ -66,20 +52,22 @@
 
 @media screen and (max-width: 768px){
 
-    .image__container {
-        width:200px;
-
-    }
 
 }
 @media screen and (max-width: 576px){
-
-    .tagline__text {
-        font-size:0px;
+    .parallax-section {
+        height: 0vh;
     }
 
-    .image__container {
-        width: 200px;
+    .tagline {
+        margin-top: 30px;
+        width: 0px;
+        height: 0px;
+    }
+
+    .tagline__text {
+        top: 20%;
+        font-size: 25px;
     }
 
     #about {
@@ -90,6 +78,10 @@
         height: 0px
     }
 
+    .image-container {
+        width: 0px;
+    }
+
     .nav {
         font-size: 15px
     }
@@ -97,26 +89,22 @@
     .header__logo {
         font-size: 15px;
     }
-
     .header__inner {
         margin: 0px 20px;
     }
-
     .form__daten {
         margin-top: 15px;
     }
     .form__design {
         display: block;
     }
-
     .column {
         padding: 5px;
     }
     .form__group {
         margin-right: 0px;
-        margin-bottom: 0px;
+     margin-bottom: 0px;
     }
-
     #about__content {
         font-size: 15px;
     }
@@ -147,7 +135,6 @@
     }
 
     #button__send {
-        width: 200px;
         margin-top: 20px;
     }
 

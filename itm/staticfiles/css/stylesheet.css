@@ -246,7 +246,7 @@ input[type="text"] {
 }
 
 .logo img {
-    width: 60%%;
+    width: 100%;
 }
 
 .footer__info {
@@ -326,28 +326,14 @@ input[type="text"] {
 }
 
 .form__daten__base {
-    width: 350px;
+    width: 400px;
     padding: 5px 10px;
     font-size: 16px;
     border: #000 solid .5px;
 }
 
-.form__design {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-}
-
-.column {
-    padding: 10px;
-}
-
-.form-group {
-    display: inline-block;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    text-align: center;
-    width: 200px;
+.form__group {
+    width: 300px;
 }
 
 .form__daten__place {
@@ -358,22 +344,17 @@ input[type="text"] {
     margin-right: 10px;
 }
 
-
 .left__colums {
     float: left;
     margin-right: 100px;
 }
 
-
 #button__send {
     display: block;
     border: none;
-    margin-top: 20px;
-    width: 50%;
     border-radius: 5px;
     background-color: #C0DF17;
     color: white;
-
 
     font-size: 20px;
     padding: 10px 10px;

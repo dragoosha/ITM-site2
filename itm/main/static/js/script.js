@@ -14,7 +14,7 @@ sliderBtnPrev.addEventListener('click', prevSlide);
 function nextSlide() {
     sliderCount++;
 
-    if (sliderCount >= sliderImages.length) {
+    if (sliderCount >= sliderImages.length - 5) {
         sliderCount = 0;
     }
 
@@ -24,7 +24,7 @@ function nextSlide() {
 function prevSlide() {
     sliderCount--;
 
-    if(sliderCount >= sliderImages.length) {
+    if(sliderCount >= sliderImages.length - 5) {
         sliderCount = 0;
     }
 

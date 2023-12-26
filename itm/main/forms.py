@@ -34,27 +34,20 @@ class ContactForm(forms.Form ):
         max_length=30,
         required=False,
         widget=forms.TextInput(
-            attrs= { 'class' : 'form__daten__base',  'style' : 'margin-bottom: 25px;' }
+            attrs= { 'class' : 'form__daten__base' }
         ) 
     )
 
     place = forms.CharField (
         max_length=100,
         widget=forms.TextInput(
-            attrs= { 'class' : 'form__daten__place' }
-        ) 
-    )
-
-    country = forms.CharField (
-        max_length=100,
-        widget=forms.TextInput(
-            attrs= { 'class' : 'form__daten__place' }
+            attrs= { 'class' : 'form__daten__base' }
         ) 
     )
 
     email = forms.EmailField (
         widget=forms.EmailInput(
-            attrs= { 'class' : 'form__daten__base' }
+            attrs= { 'class' : 'form__daten__base'}
         ) 
     )
     plz = forms.CharField(
@@ -63,5 +56,4 @@ class ContactForm(forms.Form ):
             attrs= { 'class' : 'form__daten__base' }
         ) 
     )
-    
     

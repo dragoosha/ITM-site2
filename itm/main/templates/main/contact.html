@@ -29,10 +29,10 @@
                 <h1>Kontakt</h1>
                 <p>Wir freuen uns von Ihnen zu hören! Mit diesem Formular können Sie uns eine allgemeine Mitteilung
                     hinterlassen. Wir werden uns dann schnellstmöglich bei Ihnen melden. </p>
-                <form method="post" action="">
-                    {% csrf_token %}
-                    <div class="form__daten">
-                        <div class="left__colums">
+                <div class="form__daten">
+                    <form class= "form__design" method="post" action="">
+                        {% csrf_token %}
+                        <div class="column">
 
                             <label for="fname">VORNAME *</label><br>
                             {{ form.name }} <br>
@@ -43,29 +43,28 @@
                             <label for="fposition">POSITION / FUNKTION</label><br>
                             {{ form.position }}<br>
 
+                            <label for="femail">E-MAIL *</label><br>
+                            {{ form.email }}<br>
+
+                        </div>
+                        <div class="column">
                             <label for="fplz">PLZ *</label><br>
                             {{ form.plz }}<br>
 
-                        </div>
-                        <div class="right__colums">
                             <label for="fsurname">NACHNAME *</label><br>
                             {{ form.surname }}<br>
-
-                            <label for="femail">E-MAIL *</label><br>
-                            {{ form.email }}<br>
 
                             <label for="ftelefon">TELEFON</label><br>
                             {{ form.telefon }}<br>
 
-                            <label for="fcity">ORT *</label>
+                            <label for="fcity">ORT/LAND *</label>
                             {{ form.place }}
 
-                            <label for="fcountry">LAND *</label>
-                            {{ form.country }}
+
                         </div>
+                        <input id="button__send" type="submit" value="Nachricht Senden">
                 </form>
 
-                <input id="button__send" type="submit" value="Nachricht Senden">
             </div>
         </div>
     </div>
