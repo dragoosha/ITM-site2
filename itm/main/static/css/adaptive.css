@@ -83,7 +83,7 @@
 @media screen and (max-width: 576px){
 
     .parallax-section {
-        background-image: url('../images/logo-phone.jpg');
+        background-image: url('../images/logo-phone.png');
     }
 
     .tagline__text {
