@@ -83,7 +83,7 @@
 @media screen and (max-width: 576px){
 
     .parallax-section {
-        background-size: 50%;
+        background-size: 100%;
         background-image: url('../images/logo-phone.png');
     }
 
