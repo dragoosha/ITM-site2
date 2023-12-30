@@ -38,7 +38,13 @@ function prevSlide() {
 }
 
 function rollSlider () {
-    sliderLine.style.transform = `translateX(${-sliderCount * sliderWidth}px`;
+    if (window.innerWidth > 1200) {
+        sliderLine.style.transform = `translateX(${-sliderCount * sliderWidth}px`;
+    }
+
+    if (window.innerWidth < 1200 and window.innerWidth > 588) {
+        sliderLine.style.transform = `translateX(${-sliderCount*0.5 * sliderWidth}px`;
+    }
 }
 
 setInterval(() => {

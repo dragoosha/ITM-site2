@@ -1,6 +1,6 @@
 @media screen and (max-width: 1200px){
     .parallax-section {
-        background-image: url('../images/logo-phone.png');
+        height: 0vh;
     }
 
     .tagline__text {
@@ -16,8 +16,7 @@
 
 @media screen and (max-width: 998px){
     .parallax-section {
-        background-image: url('../images/logo-phone.png');
-        height: 100vh;
+        height: 0vh;
     }
 
     .tagline {
@@ -34,7 +33,7 @@
         height: 300px;
     }
 
-    .container {
+    .container__intro {
         height: 20px;
     }
 
@@ -55,7 +54,7 @@
     border: 0px solid rgba(255, 255, 255, 0.849);
 }
     .header__logo {
-        font-size: 20px;
+        font-size: 25px;
     }
     .form__daten {
         margin-top: 15px;
@@ -83,8 +82,7 @@
 @media screen and (max-width: 576px){
 
     .parallax-section {
-        background-size: 100%;
-        background-image: url('../images/logo-phone.png');
+        height: 0vh;
     }
 
     .tagline__text {
