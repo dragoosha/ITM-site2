@@ -19,6 +19,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
+
+# Quick-start development settings - unsuitable for production
+# See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
+
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = "django-insecure-jx--z3f=f_7^vkb=mt)vn9evbd^hdnd5-p$4d0kx(lm1urlrqi"
 
@@ -26,6 +30,8 @@ SECRET_KEY = "django-insecure-jx--z3f=f_7^vkb=mt)vn9evbd^hdnd5-p$4d0kx(lm1urlrqi
 DEBUG = True
 
 ALLOWED_HOSTS = []
+
+
 
 
 # Application definition
@@ -120,16 +126,10 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-
-# Email
-
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'zaharynski@gmail.com'
-EMAIL_HOST_PASSWORD = 'Vlazaby023'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
+#lkl

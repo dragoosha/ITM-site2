@@ -36,12 +36,17 @@ input[type="text"] {
     border: #000 solid .5px;
 }
 
-.container {
+.container__intro {
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
 }
 
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
 
 /* Header */
 .header {
@@ -285,6 +290,7 @@ input[type="text"] {
     text-decoration: none;
     color: #000;
     font-size: 20px;
+    font-weight: 600;
 }
 
 /* CONTACT.HTML */
